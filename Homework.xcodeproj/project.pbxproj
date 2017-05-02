@@ -1,0 +1,685 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9B37F68B61DEC81E8C3DF8A4 /* libPods-Homework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8879DDFFE3743C0DCA9272 /* libPods-Homework.a */; };
+		BB00A2541EB09FED0046D624 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00A2521EB09FED0046D624 /* Main.storyboard */; };
+		BB00A25C1EB09FED0046D624 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB00A25A1EB09FED0046D624 /* LaunchScreen.storyboard */; };
+		BB00A26E1EB0A3F50046D624 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A26D1EB0A3F50046D624 /* AppDelegate.m */; };
+		BB00A2711EB0A3FC0046D624 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2701EB0A3FC0046D624 /* MapViewController.m */; };
+		BB00A2741EB0A4010046D624 /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2731EB0A4010046D624 /* UserListViewController.m */; };
+		BB00A2761EB0A42A0046D624 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2751EB0A42A0046D624 /* main.m */; };
+		BB00A2781EB0A4300046D624 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB00A2771EB0A4300046D624 /* Info.plist */; };
+		BB00A27A1EB0A4350046D624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB00A2791EB0A4350046D624 /* Assets.xcassets */; };
+		BB00A27D1EB0A4B80046D624 /* Homework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB00A27B1EB0A4B80046D624 /* Homework.xcdatamodeld */; };
+		BB00A2931EB0B07C0046D624 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2921EB0B07C0046D624 /* NetworkManager.m */; };
+		BB00A29C1EB0B6EB0046D624 /* UIColor+HexFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A29B1EB0B6EB0046D624 /* UIColor+HexFormat.m */; };
+		BB600E441EB1F46200F416E5 /* UsersListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB600E431EB1F46200F416E5 /* UsersListTableViewCell.xib */; };
+		BB600E471EB227B500F416E5 /* VehicleLocation+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BB600E461EB227B500F416E5 /* VehicleLocation+CoreDataClass.m */; };
+		BB600E4B1EB235FF00F416E5 /* MarkerView.m in Sources */ = {isa = PBXBuildFile; fileRef = BB600E4A1EB235FF00F416E5 /* MarkerView.m */; };
+		BB600E4D1EB2360C00F416E5 /* MarkerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB600E4C1EB2360C00F416E5 /* MarkerView.xib */; };
+		BB6040651EB1E61F004BE14C /* NSDate+Converter.m in Sources */ = {isa = PBXBuildFile; fileRef = BB6040641EB1E61F004BE14C /* NSDate+Converter.m */; };
+		BB744DD31EB4C1DE000E3A89 /* UserListCache+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BB744DD21EB4C1DE000E3A89 /* UserListCache+CoreDataClass.m */; };
+		BB7710611EB0D3FC008FED62 /* Owner+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7710561EB0D3FB008FED62 /* Owner+CoreDataClass.m */; };
+		BB7710631EB0D3FC008FED62 /* User+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BB77105A1EB0D3FB008FED62 /* User+CoreDataClass.m */; };
+		BB7710651EB0D3FC008FED62 /* Vehicle+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = BB77105E1EB0D3FB008FED62 /* Vehicle+CoreDataClass.m */; };
+		BB7710691EB0D84B008FED62 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BB7710681EB0D84B008FED62 /* DataProvider.m */; };
+		BB885AE31EB35675004E2D9D /* AddressHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BB885AE21EB35675004E2D9D /* AddressHelper.m */; };
+		BBAFB4E71EB1F372008CA978 /* UsersListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAFB4E61EB1F372008CA978 /* UsersListTableViewCell.m */; };
+		BBAFB4EA1EB1F3E8008CA978 /* BaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAFB4E91EB1F3E8008CA978 /* BaseTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D8879DDFFE3743C0DCA9272 /* libPods-Homework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Homework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0F03E5BFFDB2F0BF62D5547 /* Pods-Homework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework/Pods-Homework.debug.xcconfig"; sourceTree = "<group>"; };
+		BB00A2461EB09FED0046D624 /* Homework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homework.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB00A2531EB09FED0046D624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BB00A25B1EB09FED0046D624 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB00A26C1EB0A3F50046D624 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Controller/AppDelegate.h; sourceTree = "<group>"; };
+		BB00A26D1EB0A3F50046D624 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Controller/AppDelegate.m; sourceTree = "<group>"; };
+		BB00A26F1EB0A3FC0046D624 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = Controller/MapViewController.h; sourceTree = "<group>"; };
+		BB00A2701EB0A3FC0046D624 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = Controller/MapViewController.m; sourceTree = "<group>"; };
+		BB00A2721EB0A4010046D624 /* UserListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserListViewController.h; path = Controller/UserListViewController.h; sourceTree = "<group>"; };
+		BB00A2731EB0A4010046D624 /* UserListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserListViewController.m; path = Controller/UserListViewController.m; sourceTree = "<group>"; };
+		BB00A2751EB0A42A0046D624 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Support/main.m; sourceTree = "<group>"; };
+		BB00A2771EB0A4300046D624 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Support/Info.plist; sourceTree = "<group>"; };
+		BB00A2791EB0A4350046D624 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Support/Assets.xcassets; sourceTree = "<group>"; };
+		BB00A27C1EB0A4B80046D624 /* Homework.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Homework.xcdatamodel; sourceTree = "<group>"; };
+		BB00A2911EB0B07C0046D624 /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Controller/NetworkManager.h; sourceTree = "<group>"; };
+		BB00A2921EB0B07C0046D624 /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Controller/NetworkManager.m; sourceTree = "<group>"; };
+		BB00A2951EB0B2200046D624 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = Support/Constants.h; sourceTree = "<group>"; };
+		BB00A2961EB0B22F0046D624 /* Homework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Homework-Prefix.pch"; path = "Support/Homework-Prefix.pch"; sourceTree = "<group>"; };
+		BB00A29A1EB0B6EB0046D624 /* UIColor+HexFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+HexFormat.h"; path = "Support/UIColor+HexFormat.h"; sourceTree = "<group>"; };
+		BB00A29B1EB0B6EB0046D624 /* UIColor+HexFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HexFormat.m"; path = "Support/UIColor+HexFormat.m"; sourceTree = "<group>"; };
+		BB600E431EB1F46200F416E5 /* UsersListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = UsersListTableViewCell.xib; path = View/UsersListTableViewCell.xib; sourceTree = "<group>"; };
+		BB600E451EB227B500F416E5 /* VehicleLocation+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "VehicleLocation+CoreDataClass.h"; path = "Model/VehicleLocation+CoreDataClass.h"; sourceTree = "<group>"; };
+		BB600E461EB227B500F416E5 /* VehicleLocation+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "VehicleLocation+CoreDataClass.m"; path = "Model/VehicleLocation+CoreDataClass.m"; sourceTree = "<group>"; };
+		BB600E491EB235FF00F416E5 /* MarkerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MarkerView.h; path = View/MarkerView.h; sourceTree = "<group>"; };
+		BB600E4A1EB235FF00F416E5 /* MarkerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MarkerView.m; path = View/MarkerView.m; sourceTree = "<group>"; };
+		BB600E4C1EB2360C00F416E5 /* MarkerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MarkerView.xib; path = View/MarkerView.xib; sourceTree = "<group>"; };
+		BB6040631EB1E61F004BE14C /* NSDate+Converter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Converter.h"; path = "Support/NSDate+Converter.h"; sourceTree = "<group>"; };
+		BB6040641EB1E61F004BE14C /* NSDate+Converter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Converter.m"; path = "Support/NSDate+Converter.m"; sourceTree = "<group>"; };
+		BB744DD11EB4C1DE000E3A89 /* UserListCache+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UserListCache+CoreDataClass.h"; path = "Model/UserListCache+CoreDataClass.h"; sourceTree = "<group>"; };
+		BB744DD21EB4C1DE000E3A89 /* UserListCache+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UserListCache+CoreDataClass.m"; path = "Model/UserListCache+CoreDataClass.m"; sourceTree = "<group>"; };
+		BB7710551EB0D3FB008FED62 /* Owner+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Owner+CoreDataClass.h"; path = "Model/Owner+CoreDataClass.h"; sourceTree = "<group>"; };
+		BB7710561EB0D3FB008FED62 /* Owner+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Owner+CoreDataClass.m"; path = "Model/Owner+CoreDataClass.m"; sourceTree = "<group>"; };
+		BB7710591EB0D3FB008FED62 /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataClass.h"; path = "Model/User+CoreDataClass.h"; sourceTree = "<group>"; };
+		BB77105A1EB0D3FB008FED62 /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataClass.m"; path = "Model/User+CoreDataClass.m"; sourceTree = "<group>"; };
+		BB77105D1EB0D3FB008FED62 /* Vehicle+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Vehicle+CoreDataClass.h"; path = "Model/Vehicle+CoreDataClass.h"; sourceTree = "<group>"; };
+		BB77105E1EB0D3FB008FED62 /* Vehicle+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Vehicle+CoreDataClass.m"; path = "Model/Vehicle+CoreDataClass.m"; sourceTree = "<group>"; };
+		BB7710671EB0D84B008FED62 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataProvider.h; path = Controller/DataProvider.h; sourceTree = "<group>"; };
+		BB7710681EB0D84B008FED62 /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataProvider.m; path = Controller/DataProvider.m; sourceTree = "<group>"; };
+		BB885AE11EB35675004E2D9D /* AddressHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddressHelper.h; path = Support/AddressHelper.h; sourceTree = "<group>"; };
+		BB885AE21EB35675004E2D9D /* AddressHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddressHelper.m; path = Support/AddressHelper.m; sourceTree = "<group>"; };
+		BBAFB4E51EB1F372008CA978 /* UsersListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UsersListTableViewCell.h; path = View/UsersListTableViewCell.h; sourceTree = "<group>"; };
+		BBAFB4E61EB1F372008CA978 /* UsersListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UsersListTableViewCell.m; path = View/UsersListTableViewCell.m; sourceTree = "<group>"; };
+		BBAFB4E81EB1F3E8008CA978 /* BaseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTableViewCell.h; path = View/BaseTableViewCell.h; sourceTree = "<group>"; };
+		BBAFB4E91EB1F3E8008CA978 /* BaseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTableViewCell.m; path = View/BaseTableViewCell.m; sourceTree = "<group>"; };
+		F874C9CD4C1759B2E8464A58 /* Pods-Homework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework/Pods-Homework.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB00A2431EB09FED0046D624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B37F68B61DEC81E8C3DF8A4 /* libPods-Homework.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7C96D7060D5FF60F021908F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A0F03E5BFFDB2F0BF62D5547 /* Pods-Homework.debug.xcconfig */,
+				F874C9CD4C1759B2E8464A58 /* Pods-Homework.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB00A23D1EB09FED0046D624 = {
+			isa = PBXGroup;
+			children = (
+				BB00A2481EB09FED0046D624 /* Homework */,
+				BB00A2471EB09FED0046D624 /* Products */,
+				B7C96D7060D5FF60F021908F /* Pods */,
+				E1182C55BAEFBB889FE08C92 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB00A2471EB09FED0046D624 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A2461EB09FED0046D624 /* Homework.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB00A2481EB09FED0046D624 /* Homework */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A2651EB0A3050046D624 /* Model */,
+				BB00A2631EB0A2F10046D624 /* View */,
+				BB00A2641EB0A2FB0046D624 /* Controller */,
+				BB00A2491EB09FED0046D624 /* Supporting Files */,
+			);
+			path = Homework;
+			sourceTree = "<group>";
+		};
+		BB00A2491EB09FED0046D624 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A2791EB0A4350046D624 /* Assets.xcassets */,
+				BB00A2771EB0A4300046D624 /* Info.plist */,
+				BB00A2751EB0A42A0046D624 /* main.m */,
+				BB00A2961EB0B22F0046D624 /* Homework-Prefix.pch */,
+				BB00A2951EB0B2200046D624 /* Constants.h */,
+				BB885AE41EB3567B004E2D9D /* AddressHelper */,
+				BB00A29D1EB0B6F10046D624 /* UIColor+HexFormat */,
+				BB6040661EB1E627004BE14C /* NSDate+Converter */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BB00A2631EB0A2F10046D624 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A27E1EB0A8AE0046D624 /* Storyboards */,
+				BB600E421EB1F44400F416E5 /* TableViewCells */,
+				BB600E4E1EB23BA400F416E5 /* MarkerView */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		BB00A2641EB0A2FB0046D624 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A2671EB0A3680046D624 /* AppDelegate */,
+				BB00A2661EB0A3560046D624 /* UserListViewController */,
+				BB00A2681EB0A36C0046D624 /* MapViewController */,
+				BB77106A1EB0D860008FED62 /* NetworkManager */,
+				BB77106B1EB0D866008FED62 /* DataProvider */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		BB00A2651EB0A3050046D624 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A27B1EB0A4B80046D624 /* Homework.xcdatamodeld */,
+				BB90A75B1EB0C9930073CB14 /* User */,
+				BB90A7471EB0C3030073CB14 /* Owner */,
+				BB90A7461EB0C2FE0073CB14 /* Vehicle */,
+				BB600E481EB227B900F416E5 /* VehicleLocation */,
+				BB744DD41EB4C1E5000E3A89 /* UserList */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BB00A2661EB0A3560046D624 /* UserListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A2721EB0A4010046D624 /* UserListViewController.h */,
+				BB00A2731EB0A4010046D624 /* UserListViewController.m */,
+			);
+			name = UserListViewController;
+			sourceTree = "<group>";
+		};
+		BB00A2671EB0A3680046D624 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A26C1EB0A3F50046D624 /* AppDelegate.h */,
+				BB00A26D1EB0A3F50046D624 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		BB00A2681EB0A36C0046D624 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A26F1EB0A3FC0046D624 /* MapViewController.h */,
+				BB00A2701EB0A3FC0046D624 /* MapViewController.m */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
+		BB00A27E1EB0A8AE0046D624 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A2521EB09FED0046D624 /* Main.storyboard */,
+				BB00A25A1EB09FED0046D624 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		BB00A29D1EB0B6F10046D624 /* UIColor+HexFormat */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A29A1EB0B6EB0046D624 /* UIColor+HexFormat.h */,
+				BB00A29B1EB0B6EB0046D624 /* UIColor+HexFormat.m */,
+			);
+			name = "UIColor+HexFormat";
+			sourceTree = "<group>";
+		};
+		BB600E401EB1F43A00F416E5 /* BaseTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BBAFB4E81EB1F3E8008CA978 /* BaseTableViewCell.h */,
+				BBAFB4E91EB1F3E8008CA978 /* BaseTableViewCell.m */,
+			);
+			name = BaseTableViewCell;
+			sourceTree = "<group>";
+		};
+		BB600E411EB1F44000F416E5 /* UsersListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BBAFB4E51EB1F372008CA978 /* UsersListTableViewCell.h */,
+				BBAFB4E61EB1F372008CA978 /* UsersListTableViewCell.m */,
+				BB600E431EB1F46200F416E5 /* UsersListTableViewCell.xib */,
+			);
+			name = UsersListTableViewCell;
+			sourceTree = "<group>";
+		};
+		BB600E421EB1F44400F416E5 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BB600E411EB1F44000F416E5 /* UsersListTableViewCell */,
+				BB600E401EB1F43A00F416E5 /* BaseTableViewCell */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
+		BB600E481EB227B900F416E5 /* VehicleLocation */ = {
+			isa = PBXGroup;
+			children = (
+				BB600E451EB227B500F416E5 /* VehicleLocation+CoreDataClass.h */,
+				BB600E461EB227B500F416E5 /* VehicleLocation+CoreDataClass.m */,
+			);
+			name = VehicleLocation;
+			sourceTree = "<group>";
+		};
+		BB600E4E1EB23BA400F416E5 /* MarkerView */ = {
+			isa = PBXGroup;
+			children = (
+				BB600E491EB235FF00F416E5 /* MarkerView.h */,
+				BB600E4A1EB235FF00F416E5 /* MarkerView.m */,
+				BB600E4C1EB2360C00F416E5 /* MarkerView.xib */,
+			);
+			name = MarkerView;
+			sourceTree = "<group>";
+		};
+		BB6040661EB1E627004BE14C /* NSDate+Converter */ = {
+			isa = PBXGroup;
+			children = (
+				BB6040631EB1E61F004BE14C /* NSDate+Converter.h */,
+				BB6040641EB1E61F004BE14C /* NSDate+Converter.m */,
+			);
+			name = "NSDate+Converter";
+			sourceTree = "<group>";
+		};
+		BB744DD41EB4C1E5000E3A89 /* UserList */ = {
+			isa = PBXGroup;
+			children = (
+				BB744DD11EB4C1DE000E3A89 /* UserListCache+CoreDataClass.h */,
+				BB744DD21EB4C1DE000E3A89 /* UserListCache+CoreDataClass.m */,
+			);
+			name = UserList;
+			sourceTree = "<group>";
+		};
+		BB77106A1EB0D860008FED62 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				BB00A2911EB0B07C0046D624 /* NetworkManager.h */,
+				BB00A2921EB0B07C0046D624 /* NetworkManager.m */,
+			);
+			name = NetworkManager;
+			sourceTree = "<group>";
+		};
+		BB77106B1EB0D866008FED62 /* DataProvider */ = {
+			isa = PBXGroup;
+			children = (
+				BB7710671EB0D84B008FED62 /* DataProvider.h */,
+				BB7710681EB0D84B008FED62 /* DataProvider.m */,
+			);
+			name = DataProvider;
+			sourceTree = "<group>";
+		};
+		BB885AE41EB3567B004E2D9D /* AddressHelper */ = {
+			isa = PBXGroup;
+			children = (
+				BB885AE11EB35675004E2D9D /* AddressHelper.h */,
+				BB885AE21EB35675004E2D9D /* AddressHelper.m */,
+			);
+			name = AddressHelper;
+			sourceTree = "<group>";
+		};
+		BB90A7461EB0C2FE0073CB14 /* Vehicle */ = {
+			isa = PBXGroup;
+			children = (
+				BB77105D1EB0D3FB008FED62 /* Vehicle+CoreDataClass.h */,
+				BB77105E1EB0D3FB008FED62 /* Vehicle+CoreDataClass.m */,
+			);
+			name = Vehicle;
+			sourceTree = "<group>";
+		};
+		BB90A7471EB0C3030073CB14 /* Owner */ = {
+			isa = PBXGroup;
+			children = (
+				BB7710551EB0D3FB008FED62 /* Owner+CoreDataClass.h */,
+				BB7710561EB0D3FB008FED62 /* Owner+CoreDataClass.m */,
+			);
+			name = Owner;
+			sourceTree = "<group>";
+		};
+		BB90A75B1EB0C9930073CB14 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				BB7710591EB0D3FB008FED62 /* User+CoreDataClass.h */,
+				BB77105A1EB0D3FB008FED62 /* User+CoreDataClass.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		E1182C55BAEFBB889FE08C92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D8879DDFFE3743C0DCA9272 /* libPods-Homework.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB00A2451EB09FED0046D624 /* Homework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB00A2601EB09FED0046D624 /* Build configuration list for PBXNativeTarget "Homework" */;
+			buildPhases = (
+				EDE9FC1A38B339C49B3216E4 /* [CP] Check Pods Manifest.lock */,
+				BB00A2421EB09FED0046D624 /* Sources */,
+				BB00A2431EB09FED0046D624 /* Frameworks */,
+				BB00A2441EB09FED0046D624 /* Resources */,
+				0032DE9842CE9FDC4D8B1CDD /* [CP] Embed Pods Frameworks */,
+				17BF0034DEED330A2CB398D3 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Homework;
+			productName = Homework;
+			productReference = BB00A2461EB09FED0046D624 /* Homework.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB00A23E1EB09FED0046D624 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Aleksey Gorbachevskiy";
+				TargetAttributes = {
+					BB00A2451EB09FED0046D624 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4VQ48U3YP6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BB00A2411EB09FED0046D624 /* Build configuration list for PBXProject "Homework" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB00A23D1EB09FED0046D624;
+			productRefGroup = BB00A2471EB09FED0046D624 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB00A2451EB09FED0046D624 /* Homework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB00A2441EB09FED0046D624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB600E4D1EB2360C00F416E5 /* MarkerView.xib in Resources */,
+				BB00A2781EB0A4300046D624 /* Info.plist in Resources */,
+				BB00A25C1EB09FED0046D624 /* LaunchScreen.storyboard in Resources */,
+				BB00A2541EB09FED0046D624 /* Main.storyboard in Resources */,
+				BB00A27A1EB0A4350046D624 /* Assets.xcassets in Resources */,
+				BB600E441EB1F46200F416E5 /* UsersListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0032DE9842CE9FDC4D8B1CDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework/Pods-Homework-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		17BF0034DEED330A2CB398D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework/Pods-Homework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDE9FC1A38B339C49B3216E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB00A2421EB09FED0046D624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB00A26E1EB0A3F50046D624 /* AppDelegate.m in Sources */,
+				BB00A29C1EB0B6EB0046D624 /* UIColor+HexFormat.m in Sources */,
+				BB00A27D1EB0A4B80046D624 /* Homework.xcdatamodeld in Sources */,
+				BB600E471EB227B500F416E5 /* VehicleLocation+CoreDataClass.m in Sources */,
+				BB600E4B1EB235FF00F416E5 /* MarkerView.m in Sources */,
+				BB6040651EB1E61F004BE14C /* NSDate+Converter.m in Sources */,
+				BB744DD31EB4C1DE000E3A89 /* UserListCache+CoreDataClass.m in Sources */,
+				BB00A2931EB0B07C0046D624 /* NetworkManager.m in Sources */,
+				BB7710631EB0D3FC008FED62 /* User+CoreDataClass.m in Sources */,
+				BB7710651EB0D3FC008FED62 /* Vehicle+CoreDataClass.m in Sources */,
+				BBAFB4E71EB1F372008CA978 /* UsersListTableViewCell.m in Sources */,
+				BB00A2741EB0A4010046D624 /* UserListViewController.m in Sources */,
+				BB00A2761EB0A42A0046D624 /* main.m in Sources */,
+				BB7710691EB0D84B008FED62 /* DataProvider.m in Sources */,
+				BB00A2711EB0A3FC0046D624 /* MapViewController.m in Sources */,
+				BBAFB4EA1EB1F3E8008CA978 /* BaseTableViewCell.m in Sources */,
+				BB885AE31EB35675004E2D9D /* AddressHelper.m in Sources */,
+				BB7710611EB0D3FC008FED62 /* Owner+CoreDataClass.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB00A2521EB09FED0046D624 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB00A2531EB09FED0046D624 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BB00A25A1EB09FED0046D624 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB00A25B1EB09FED0046D624 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB00A25E1EB09FED0046D624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB00A25F1EB09FED0046D624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB00A2611EB09FED0046D624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0F03E5BFFDB2F0BF62D5547 /* Pods-Homework.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4VQ48U3YP6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Support/Homework-Prefix.pch";
+				INFOPLIST_FILE = Homework/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocsico.Homework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BB00A2621EB09FED0046D624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F874C9CD4C1759B2E8464A58 /* Pods-Homework.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4VQ48U3YP6;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/Support/Homework-Prefix.pch";
+				INFOPLIST_FILE = Homework/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ocsico.Homework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB00A2411EB09FED0046D624 /* Build configuration list for PBXProject "Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00A25E1EB09FED0046D624 /* Debug */,
+				BB00A25F1EB09FED0046D624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB00A2601EB09FED0046D624 /* Build configuration list for PBXNativeTarget "Homework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB00A2611EB09FED0046D624 /* Debug */,
+				BB00A2621EB09FED0046D624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BB00A27B1EB0A4B80046D624 /* Homework.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BB00A27C1EB0A4B80046D624 /* Homework.xcdatamodel */,
+			);
+			currentVersion = BB00A27C1EB0A4B80046D624 /* Homework.xcdatamodel */;
+			name = Homework.xcdatamodeld;
+			path = Model/Homework.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BB00A23E1EB09FED0046D624 /* Project object */;
+}

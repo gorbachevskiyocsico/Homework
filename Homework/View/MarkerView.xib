@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MarkerView">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2C-42-DQQ">
+                    <rect key="frame" x="110" y="8" width="132" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dkS-dN-ws4">
+                    <rect key="frame" x="8" y="8" width="94" height="94"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="dkS-dN-ws4" secondAttribute="height" multiplier="1:1" id="qLb-au-Ydd"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEv-aC-mLM">
+                    <rect key="frame" x="110" y="78" width="132" height="24"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="kDq-Mu-LhB"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8C-v1-RUM">
+                    <rect key="frame" x="110" y="8" width="132" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dkS-dN-ws4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="00v-yy-7nC"/>
+                <constraint firstItem="c8C-v1-RUM" firstAttribute="top" secondItem="d2C-42-DQQ" secondAttribute="bottom" id="0pL-ue-23A"/>
+                <constraint firstAttribute="bottom" secondItem="dkS-dN-ws4" secondAttribute="bottom" constant="8" id="1bO-N7-gCb"/>
+                <constraint firstItem="CEv-aC-mLM" firstAttribute="top" relation="greaterThanOrEqual" secondItem="c8C-v1-RUM" secondAttribute="bottom" id="3r6-xM-f2V"/>
+                <constraint firstItem="d2C-42-DQQ" firstAttribute="leading" secondItem="dkS-dN-ws4" secondAttribute="trailing" constant="8" id="50a-Ng-h7D"/>
+                <constraint firstItem="CEv-aC-mLM" firstAttribute="leading" secondItem="dkS-dN-ws4" secondAttribute="trailing" constant="8" id="A81-XS-ik3"/>
+                <constraint firstItem="c8C-v1-RUM" firstAttribute="leading" secondItem="d2C-42-DQQ" secondAttribute="leading" id="CD2-32-4Bc"/>
+                <constraint firstItem="dkS-dN-ws4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="CvK-Eo-7a4"/>
+                <constraint firstAttribute="trailing" secondItem="d2C-42-DQQ" secondAttribute="trailing" constant="8" id="D8b-jp-llb"/>
+                <constraint firstItem="dkS-dN-ws4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="DCQ-tD-NkB"/>
+                <constraint firstItem="dkS-dN-ws4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Gte-fV-mfK"/>
+                <constraint firstItem="d2C-42-DQQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="HQC-IV-aJi"/>
+                <constraint firstAttribute="bottom" secondItem="CEv-aC-mLM" secondAttribute="bottom" constant="8" id="SVp-IH-wVK"/>
+                <constraint firstAttribute="trailing" secondItem="CEv-aC-mLM" secondAttribute="trailing" constant="8" id="f1m-Pe-BQC"/>
+                <constraint firstItem="c8C-v1-RUM" firstAttribute="trailing" secondItem="d2C-42-DQQ" secondAttribute="trailing" id="oZT-8l-36w"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="markerColorView" destination="CEv-aC-mLM" id="h0q-Ys-osn"/>
+                <outlet property="markerDescriptionLabel" destination="c8C-v1-RUM" id="I6i-jj-dU8"/>
+                <outlet property="markerImageView" destination="dkS-dN-ws4" id="A4V-zf-I2y"/>
+                <outlet property="markerTitleLabel" destination="d2C-42-DQQ" id="huo-de-7vl"/>
+            </connections>
+            <point key="canvasLocation" x="-37" y="171"/>
+        </view>
+    </objects>
+</document>
