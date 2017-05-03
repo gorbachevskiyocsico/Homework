@@ -164,7 +164,7 @@
         
         NSMutableDictionary *userData = [NSMutableDictionary new];
         
-        [userData setObject:@(vehicleLocation.vehicleid) forKey:@"vehicleid"];
+        [userData setObject:vehicleLocation.vehicleid forKey:@"vehicleid"];
         
         marker.userData = userData;
         
@@ -204,7 +204,7 @@
         
         if ([marker.userData isKindOfClass:[NSDictionary class]]) {
             
-            NSInteger vehicleid = [[(NSDictionary *)marker.userData valueForKey:@"vehicleid"] longValue];
+            NSNumber *vehicleid = [(NSDictionary *)marker.userData valueForKey:@"vehicleid"];
             
             Vehicle *vehicle = [[DataProvider sharedInstance] getVehicleWithVehicleid:vehicleid];
             
@@ -231,7 +231,7 @@
     
     if ([marker.userData isKindOfClass:[NSDictionary class]]) {
         
-        NSInteger vehicleid = [[(NSMutableDictionary *)marker.userData valueForKey:@"vehicleid"] longValue];
+        NSNumber *vehicleid = [(NSMutableDictionary *)marker.userData valueForKey:@"vehicleid"];
         NSString *address = [(NSMutableDictionary *)marker.userData valueForKey:@"address"];
         
         if (address) {
@@ -273,7 +273,7 @@
     
     if ([marker.userData isKindOfClass:[NSDictionary class]]) {
         
-        NSInteger vehicleid = [[(NSMutableDictionary *)marker.userData valueForKey:@"vehicleid"] longValue];
+        NSNumber *vehicleid = [(NSMutableDictionary *)marker.userData valueForKey:@"vehicleid"];
         
         Vehicle *vehicle = [[DataProvider sharedInstance] getVehicleWithVehicleid:vehicleid];
         

@@ -79,11 +79,11 @@
     }];
 }
 
-- (void)getVehiclesLocationWithUserid:(NSInteger)userid
+- (void)getVehiclesLocationWithUserid:(NSNumber *)userid
                               success:(void (^)(NSArray *responseArray))success
                               failure:(void (^)(NSError *error))failure {
     
-    [self.requestManager GET:[NSString stringWithFormat:@"?op=getlocations&userid=%li", userid] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [self.requestManager GET:[NSString stringWithFormat:@"?op=getlocations&userid=%@", userid] parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         if (responseObject) {
             

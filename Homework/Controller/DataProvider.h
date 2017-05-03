@@ -22,9 +22,9 @@
 -(instancetype) copy __attribute__((unavailable("copy not available, call sharedInstance instead")));
 
 - (NSArray <User *>*)getUsers;
-- (User *)getUserWithUserid:(NSInteger)userid;
+- (User *)getUserWithUserid:(NSNumber *)userid;
 
-- (Vehicle *)getVehicleWithVehicleid:(NSInteger)vehicleid;
+- (Vehicle *)getVehicleWithVehicleid:(NSNumber *)vehicleid;
 
 - (void)clearUsers;
 - (void)clearVehicles;

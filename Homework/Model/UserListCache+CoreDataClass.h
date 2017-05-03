@@ -12,7 +12,7 @@
 
 @interface UserListCache : NSManagedObject
 
-@property (nullable, retain, nonatomic) NSDate *downloadTime;
+@property (retain, nonatomic) NSDate *downloadTime;
 
 @end
 

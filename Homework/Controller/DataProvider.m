@@ -51,7 +51,7 @@
     
     if ([userid isKindOfClass:[NSNumber class]]) {
         
-        user.userid = [userid intValue];
+        user.userid = userid;
     }
     
     id owner = [dict valueForKey:@"owner"];
@@ -111,7 +111,7 @@
     
     if ([vehicleid isKindOfClass:[NSNumber class]]) {
         
-        vehicle.vehicleid = [vehicleid longValue];
+        vehicle.vehicleid = vehicleid;
     }
     
     vehicle.color = [dict valueForKey:@"color"];
@@ -143,7 +143,7 @@
     
     if ([vehicleid isKindOfClass:[NSNumber class]]) {
         
-        vehicleLocation.vehicleid = [vehicleid longValue];
+        vehicleLocation.vehicleid = vehicleid;
     }
 
     id lon = [dict valueForKey:@"lon"];
@@ -200,9 +200,9 @@
     }];
 }
 
-- (User *)getUserWithUserid:(NSInteger)userid {
+- (User *)getUserWithUserid:(NSNumber *)userid {
     
-    return [User MR_findFirstByAttribute:@"userid" withValue:[NSNumber numberWithInteger:userid]];
+    return [User MR_findFirstByAttribute:@"userid" withValue:userid];
 }
 
 - (void)clearUsers {
@@ -217,9 +217,9 @@
     [self saveContext];
 }
 
-- (Vehicle *)getVehicleWithVehicleid:(NSInteger)vehicleid {
+- (Vehicle *)getVehicleWithVehicleid:(NSNumber *)vehicleid {
     
-    return [Vehicle MR_findFirstByAttribute:@"vehicleid" withValue:[NSNumber numberWithInteger:vehicleid]];
+    return [Vehicle MR_findFirstByAttribute:@"vehicleid" withValue:vehicleid];
 }
 
 - (void)clearVehicles {

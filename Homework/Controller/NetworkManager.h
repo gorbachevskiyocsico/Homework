@@ -22,7 +22,7 @@
 - (void)getUsersListWithSuccess:(void (^)(NSArray *responseArray))success
                         failure:(void (^)(NSError *error))failure;
 
-- (void)getVehiclesLocationWithUserid:(NSInteger)userid
+- (void)getVehiclesLocationWithUserid:(NSNumber *)userid
                               success:(void (^)(NSArray *responseArray))success
                               failure:(void (^)(NSError *error))failure;
 

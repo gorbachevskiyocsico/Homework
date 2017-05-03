@@ -10,6 +10,6 @@
 
 @interface MapViewController : UIViewController
 
-@property (nonatomic) NSInteger userid;
+@property (nonatomic) NSNumber *userid;
 
 @end
