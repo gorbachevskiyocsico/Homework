@@ -70,7 +70,7 @@
 
 - (void)updateAfterOneMinute {
     
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(60 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kSecondsBetweenUpdateMapViewMarkers * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
         [self clearData];
         [self downloadVehicleLocationsFromServer];
@@ -290,9 +290,9 @@
             return;
         }
         
-        NSDictionary *firstRoute = [routes objectAtIndex:0];
+        NSDictionary *firstRoute = routes.firstObject;
         
-        NSDictionary *leg =  [[firstRoute objectForKey:@"legs"] objectAtIndex:0];
+        NSDictionary *leg =  [[firstRoute objectForKey:@"legs"] firstObject];
         
         NSArray *steps = [leg objectForKey:@"steps"];
         

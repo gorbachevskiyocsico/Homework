@@ -160,13 +160,9 @@
         vehicleLocation.lat = [lat doubleValue];
     }
     
-    [self saveContext];
-    
     Vehicle *vehicle = [self getVehicleWithVehicleid:vehicleLocation.vehicleid];
     
     vehicle.vehicleLocation = vehicleLocation;
-    
-    [self saveContext];
     
     vehicle.user.vehicleUpdateTime = [NSDate date];
     

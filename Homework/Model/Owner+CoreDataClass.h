@@ -14,10 +14,10 @@
 
 @interface Owner : NSManagedObject
 
-@property (nullable, nonatomic, copy) NSString *foto;
-@property (nullable, nonatomic, copy) NSString *name;
-@property (nullable, nonatomic, copy) NSString *surname;
-@property (nullable, nonatomic, copy, readonly) NSString *fullname;
+@property (nullable, copy, nonatomic) NSString *foto;
+@property (nullable, copy, nonatomic) NSString *name;
+@property (nullable, copy, nonatomic) NSString *surname;
+@property (nullable, copy, nonatomic, readonly) NSString *fullname;
 @property (nullable, nonatomic) User *user;
 
 @end

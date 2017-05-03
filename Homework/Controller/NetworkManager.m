@@ -14,7 +14,7 @@
 
 @interface NetworkManager()
 
-@property (nonatomic, strong) AFHTTPSessionManager *requestManager;
+@property (strong, nonatomic) AFHTTPSessionManager *requestManager;
 
 @end
 

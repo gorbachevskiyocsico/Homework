@@ -15,14 +15,14 @@
 
 @interface Vehicle : NSManagedObject
 
-@property (nullable, nonatomic, copy) NSString *color;
-@property (nullable, nonatomic, copy) NSString *foto;
-@property (nullable, nonatomic, copy) NSString *make;
-@property (nullable, nonatomic, copy) NSString *model;
-@property (nullable, nonatomic, copy) NSString *vin;
-@property (nullable, nonatomic, copy) NSString *year;
+@property (nullable, copy, nonatomic) NSString *color;
+@property (nullable, copy, nonatomic) NSString *foto;
+@property (nullable, copy, nonatomic) NSString *make;
+@property (nullable, copy, nonatomic) NSString *model;
+@property (nullable, copy, nonatomic) NSString *vin;
+@property (nullable, copy, nonatomic) NSString *year;
 @property (nonatomic) int64_t vehicleid;
-@property (nullable, nonatomic, retain) VehicleLocation *vehicleLocation;
+@property (nullable, retain, nonatomic) VehicleLocation *vehicleLocation;
 @property (nullable, nonatomic) User *user;
 
 @end

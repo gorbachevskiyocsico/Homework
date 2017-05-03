@@ -14,6 +14,7 @@
 #define kFromUserListToMapViewSegueIdentifier @"fromUserListToMapViewSegueIdentifier"
 
 #define kHoursBetweenUpdateUsersList 24
+#define kSecondsBetweenUpdateMapViewMarkers 60
 #define kSecondsCacheTime 30
 
 #define kBaseUrlString @"http://mobi.connectedcar360.net/api/"

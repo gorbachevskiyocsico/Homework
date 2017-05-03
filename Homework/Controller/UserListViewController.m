@@ -14,7 +14,7 @@
 
 @interface UserListViewController () <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) NSMutableArray <User *>*users;
+@property (strong, nonatomic) NSArray <User *>*users;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.users = [NSMutableArray new];
+    self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     [self checkIfNeedUpdate];
 }
 
@@ -37,7 +37,7 @@
 
 - (void)loadUsersWithArray:(NSArray<User *>*)users {
     
-    self.users = [users mutableCopy];
+    self.users = users;
     [self.tableView reloadData];
 }
 
@@ -69,10 +69,7 @@
         
     } failure:^(NSError *error) {
         
-        dispatch_async(dispatch_get_main_queue(), ^{
-            
-            [self downloadUsersFromServer];
-        });
+        [self downloadUsersFromServer];
         
         NSLog(@"%@", error);
     }];
@@ -91,14 +88,9 @@
         cell = [[UsersListTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    cell.user = [self.users objectAtIndex:indexPath.row];
+    cell.user = self.users[indexPath.row];
     
     return cell;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
-    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -132,7 +124,7 @@
             
             MapViewController *vc = segue.destinationViewController;
             
-            User *user = [self.users objectAtIndex:indexPath.row];
+            User *user = self.users[indexPath.row];
             
             vc.userid = user.userid;
         }

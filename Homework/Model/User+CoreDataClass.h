@@ -16,8 +16,8 @@
 @interface User : NSManagedObject
 
 @property (nonatomic) int64_t userid;
-@property (nullable, nonatomic, retain) Owner *owner;
-@property (nullable, nonatomic, retain) NSSet<Vehicle *> *vehicles;
-@property (nullable, nonatomic, retain) NSDate *vehicleUpdateTime;
+@property (nullable, retain, nonatomic) Owner *owner;
+@property (nullable, retain, nonatomic) NSSet<Vehicle *> *vehicles;
+@property (nullable, retain, nonatomic) NSDate *vehicleUpdateTime;
 
 @end

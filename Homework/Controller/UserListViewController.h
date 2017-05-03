@@ -10,6 +10,5 @@
 
 @interface UserListViewController : UIViewController
 
-
 @end
 

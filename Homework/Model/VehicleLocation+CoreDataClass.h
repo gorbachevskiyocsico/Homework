@@ -15,12 +15,12 @@
 
 @interface VehicleLocation : NSManagedObject
 
-@property (nullable, nonatomic, strong, readonly) CLLocation *location;
+@property (nullable, strong, nonatomic, readonly) CLLocation *location;
 
 @property (nonatomic) int64_t vehicleid;
 @property (nonatomic) double lon;
 @property (nonatomic) double lat;
-@property (nullable, nonatomic, retain) Vehicle *vehicle;
+@property (nullable, retain, nonatomic) Vehicle *vehicle;
 
 @end
 
