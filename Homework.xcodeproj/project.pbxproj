@@ -14,7 +14,6 @@
 		BB00A2711EB0A3FC0046D624 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2701EB0A3FC0046D624 /* MapViewController.m */; };
 		BB00A2741EB0A4010046D624 /* UserListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2731EB0A4010046D624 /* UserListViewController.m */; };
 		BB00A2761EB0A42A0046D624 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2751EB0A42A0046D624 /* main.m */; };
-		BB00A2781EB0A4300046D624 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB00A2771EB0A4300046D624 /* Info.plist */; };
 		BB00A27A1EB0A4350046D624 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB00A2791EB0A4350046D624 /* Assets.xcassets */; };
 		BB00A27D1EB0A4B80046D624 /* Homework.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB00A27B1EB0A4B80046D624 /* Homework.xcdatamodeld */; };
 		BB00A2931EB0B07C0046D624 /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BB00A2921EB0B07C0046D624 /* NetworkManager.m */; };
@@ -418,7 +417,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB600E4D1EB2360C00F416E5 /* MarkerView.xib in Resources */,
-				BB00A2781EB0A4300046D624 /* Info.plist in Resources */,
 				BB00A25C1EB09FED0046D624 /* LaunchScreen.storyboard in Resources */,
 				BB00A2541EB09FED0046D624 /* Main.storyboard in Resources */,
 				BB00A27A1EB0A4350046D624 /* Assets.xcassets in Resources */,
