@@ -21,8 +21,10 @@
 @property (strong, nonatomic) GMSMapView *mapView;
 @property (strong, nonatomic) NSMutableArray <GMSMarker *>*markers;
 @property (strong, nonatomic) GMSPolyline *polyline;
-@property (nonatomic) BOOL isLoadedCamera;
 
+@property (strong, nonatomic) NSTimer *timer;
+
+@property (nonatomic) BOOL isLoadedCamera;
 @property (nonatomic) BOOL tappedMarker;
 
 @end
@@ -49,6 +51,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
+    }
+}
+
 #pragma mark - Loading Data
 
 - (void)downloadVehiclesFromLocalStorage {
@@ -65,16 +76,20 @@
     
     [self setupMarkers];
     [self setupCamera];
-    [self updateAfterOneMinute];
+    [self startTimer];
+}
+
+- (void)startTimer {
+    
+    if (!_timer) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:kSecondsBetweenUpdateMapViewMarkers target:self selector:@selector(updateAfterOneMinute) userInfo:nil repeats:YES];
+    }
 }
 
 - (void)updateAfterOneMinute {
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(kSecondsBetweenUpdateMapViewMarkers * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         
-        [self clearData];
-        [self downloadVehicleLocationsFromServer];
-    });
+    [self clearData];
+    [self downloadVehicleLocationsFromServer];
 }
 
 - (void)checkIfNeedUpdate {
@@ -232,6 +247,7 @@
         if (NO == self.tappedMarker) {
             
             [markerView.markerImageView setImageWithURL:[NSURL URLWithString:vehicle.vehicleLocation.vehicle.foto]];
+            NSLog(@"foto = %@", vehicle.vehicleLocation.vehicle.foto);
         } else {
             
             [markerView.markerImageView setImageWithURLRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:vehicle.vehicleLocation.vehicle.foto]]
